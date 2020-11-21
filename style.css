@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #35424a;
+    color: white;
+    height: 80px;
+    border-bottom: 3px solid orangered;
+    /* position: relative; */
+    /* position: fixed; */
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    float: right;
+    /* position: fixed; */
+}
+
+nav ul{
+    display: flex;
+    margin: 0px 15px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 15.5px;
+    font-size: 18.5px;
+    font-weight: 600;
+    
+}
+
+#brand h3{
+    cursor: pointer;
+
+}
+
+.active a{
+    color: rgb(223, 70, 0);
+    font-size: 20.5px;
+    font-weight: 600;
+
+}
+
+
+
+a:hover{
+    font-weight: 500;
+
+}
+
+.active a{
+    font-weight: 600;
+
+}
+
+.container #brand{
+    float: left;
+
+}
+
+.container #brand h3{
+    margin: 20px;
+    font-size: 27.5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+
+}
+
+h3 span{
+    color: rgb(223, 70, 0);
+    padding: 5px;
+}
+
+h3 a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.container #main-col{
+    width: 60%;
+}
+
+#side-bar{
+    float: right;
+    width: 32%;
+    margin: 50px 100px 10px 20px;
+    background-color: rgb(39, 62, 88);
+    color: whitesmoke;
+    padding: 30px;
+    height: 250px;
+}
+
+#side-bar h3{
+    margin: 0px 20px 10px 10px;
+    font-size: 27.5px;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+
+}
+
+#side-bar p{
+    font-size: 17px;
+    line-height: 27.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+}
+
+
+
+
+#main-col{
+    width: 65%;
+    float: left;
+}
+
+#main-col #page-title{
+    margin: 25px 25px 0px 25px;
+    /* padding: 15px; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(5, 73, 119);
+    
+}
+
+#main-col p.firstpara{
+    margin: 0px 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    /* line-height: 26px; */
+
+}
+
+#main-col p.secondpara{
+    margin: 0px 25px 60px 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+
+@media all and (max-width:800px) and (max-height:900px){
+
+    header{
+        background-color: #35424a;
+        color: white;
+        min-height: 10px;
+        border-bottom: 3px solid orangered;
+        position: fixed;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        /* margin: 10px; */
+    }
+    
+    nav{
+        height: 40px;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 0px 17.5px;
+        float: right;
+        /* justify-content: flex-end; */
+        /* overflow-x: hidden; */
+    
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin: 20px 5px;
+        /* justify-content: flex-start; */
+        /* overflow-x: hidden; */
+    
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 18.5px;
+        font-weight: 600;
+        /* overflow-x: hidden; */
+    
+    }
+    
+    .active a{
+        color: rgb(223, 70, 0);
+        font-size: 20.5px;
+        font-weight: 600;
+    
+    }
+    
+    
+    
+    a:hover{
+        font-weight: 500;
+    
+    }
+    
+    .active a{
+        font-weight: 600;
+    
+    }
+    
+    .container h3{
+        /* float: left; */
+        display: none;
+    }
+
+
+
+
+    body{
+        overflow-x: hidden;
+    }
+   
+    .container #main-col{
+        width: 100%;
+    }
+
+  
+    
+    #main-col #page-title{
+        margin: 100px 15px -5px 25px;
+        /* padding: 15px; */
+        font-family: 'Poppins', sans-serif;
+        font-size: 27.5px;
+        font-weight: 900;
+        color: rgb(5, 73, 119);
+        
+    }
+    
+    #main-col p.firstpara{
+        margin: 0px 25px;
+        font-family: 'Noto Sans JP', sans-serif;
+        padding-top: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        /* line-height: 26px; */
+    
+    }
+    
+    #main-col p.secondpara{
+        margin: -15px 25px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    
+    }
+
+   
+    
+    #side-bar{
+        float: right; 
+        width: 90%; 
+        margin: 50px 20px 10px;
+        background-color: rgb(39, 62, 88);
+        color: whitesmoke;
+        padding: 20px;
+        height: 300px; 
+        /* margin-left: 50px; */
+    }
+    
+    #side-bar h3{
+        margin: 0px 20px 0px 10px;
+        font-size: 26.5px;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-align: center;
+    
+    }
+    
+    #side-bar p{
+        font-size: 16px;
+        line-height: 25.5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    clear: both;
+    /* margin-top: 60px; */
+    
+    height: 100px;
+    background-color: #1f2e38;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 18.5px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
